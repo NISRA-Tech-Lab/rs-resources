@@ -121,7 +121,6 @@
 /jqueryui-1.13.2/jquery-ui.theme.css
 /jqueryui-1.13.2/jquery-ui.theme.min.css
 /jqueryui-1.13.2/LICENSE.txt
-/js-libs.Rproj
 /kePrint-0.0.1/kePrint.js
 /leaflet-1.3.1/images/layers-2x.png
 /leaflet-1.3.1/images/layers.png
@@ -153,6 +152,7 @@
 /proj4-2.6.2/proj4.min.js
 /Proj4Leaflet-1.0.1/proj4leaflet.js
 /README.md
+/rs-resources.Rproj
 /rstudio_leaflet-1.3.1/images/1px.png
 /rstudio_leaflet-1.3.1/rstudio_leaflet.css
 /tocify-1.9.1/jquery.tocify.css
