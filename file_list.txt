@@ -55,6 +55,7 @@
 /img/PopInfographic.png
 /img/x-twitter-brands-solid-full.svg
 /img/youtube-brands-solid-full.svg
+/js/annotation.js
 /js/bootstrap-3.3.5/css/bootstrap-theme.css
 /js/bootstrap-3.3.5/css/bootstrap-theme.css.map
 /js/bootstrap-3.3.5/css/bootstrap-theme.min.css
@@ -106,6 +107,7 @@
 /js/bootstrap-3.3.5/js/npm.js
 /js/bootstrap-3.3.5/shim/html5shiv.min.js
 /js/bootstrap-3.3.5/shim/respond.min.js
+/js/cookies_script.js
 /js/crosstalk-1.2.1/css/crosstalk.min.css
 /js/crosstalk-1.2.1/js/crosstalk.js
 /js/crosstalk-1.2.1/js/crosstalk.js.map
