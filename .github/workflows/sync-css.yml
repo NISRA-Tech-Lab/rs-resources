@@ -1,0 +1,60 @@
+name: Sync style.css
+
+on:
+  # Scheduled times use UTC.
+  # This runs every day at 10:00 UTC.
+  schedule:
+    - cron: "0 10 * * *"
+
+  # Also allows the workflow to be run manually.
+  workflow_dispatch:
+
+permissions:
+  # Allows GITHUB_TOKEN to commit into rs-resources.
+  contents: write
+
+concurrency:
+  group: sync-style-css
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out rs-resources
+        uses: actions/checkout@v7
+        with:
+          path: destination
+
+      - name: Check out rap-skeleton-dev
+        uses: actions/checkout@v7
+        with:
+          repository: NISRA-Tech-Lab/rap-skeleton-dev
+          token: ${{ secrets.RAP_SKELETON_READ_TOKEN }}
+          path: source
+          persist-credentials: false
+
+      - name: Copy style.css
+        run: |
+          set -euo pipefail
+
+          test -f source/code/style.css
+          cp source/code/style.css destination/css/style.css
+
+      - name: Commit and push changes
+        working-directory: destination
+        run: |
+          set -euo pipefail
+
+          if git diff --quiet -- css/style.css; then
+            echo "style.css is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add css/style.css
+          git commit -m "chore: sync style.css from rap-skeleton-dev"
+          git push
