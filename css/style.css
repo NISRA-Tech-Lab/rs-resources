@@ -737,8 +737,13 @@ text-align: left;
   font-size: 1.2em;
 }
 
-a.cookies-infobar_btn, a.cookies-infobar_btn_reject, a.cookiesbarlink {
+a.cookies-infobar_btn, a.cookies-infobar_btn_reject {
 	color: #fff !important;
+}
+
+.cookiesbarlink {
+  color: #2990FF !important;
+  text-decoration: underline;
 }
 
 .cookies-infobar_btn_reject {
@@ -1032,4 +1037,10 @@ a.cookies-infobar_btn, a.cookies-infobar_btn_reject, a.cookiesbarlink {
   border: 2px solid #fff;
   box-shadow: 0 0 4px rgba(255,255,255,0.6);
   border-radius: 4px;
+}
+
+
+.info.legend {
+  border: 1px solid #454A58 !important;
+  background-color: white;
 }
