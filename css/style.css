@@ -486,20 +486,6 @@ button:focus {
   background: white !important;
 }
 
-.nav-pills > li > a {
-  background: white !important;
-  color: nisra_blue !important;
-  border: 1px solid #ddd;
-}
-
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:focus,
-.nav-pills > li.active > a:hover {
-  background: #f8f9fa !important;
-  color: #000 !important;
-  border-bottom: 2px solid #FFFFFF; 
-}
-
 .tab-content {
   background: #FFFFFF;42 43
   border: 2px solid #00205B;44
@@ -507,9 +493,6 @@ button:focus {
   padding: 20px;47
   position: relative;
 }
-  
-}
-
 
 
 /* Boxes for definitions */
@@ -978,7 +961,6 @@ button.accordion-toggle[aria-expanded="true"]:focus {
 
   background-color: currentColor;
 }
-
 
 /* ===========================
    Footer
