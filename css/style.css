@@ -187,6 +187,7 @@ Department of Infrastructure:
   
   --nics-banner-bg: #00205B; /* JSOK */
   --nics-banner-highlight: #3878c5; /* JSOK */
+  --nics-banner-green: #68a41e;
   
   --nics-headings-h1-h2-h3: #1460aa;
   --nics-navy: #00205b;
@@ -235,6 +236,8 @@ Department of Infrastructure:
 }
 
 [data-nics-theme=dof] {
+  --nics-three-bar-colour-1: var(--nisra-blue);
+  --nics-three-bar-colour-2: var(--nics-navy);
   --nics-three-bar-colour-3: #68a41e;
 }
 
