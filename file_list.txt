@@ -50,6 +50,8 @@
 /img/nisra-logo-unstacked-colour.svg
 /img/nisra-logo-unstacked-white.svg
 /img/nisra-logo-white.svg
+/img/nisra-only-colour.png
+/img/nisra-only-colour.svg
 /img/nisra-only-white.svg
 /img/nisra-only.svg
 /img/PopInfographic.png
