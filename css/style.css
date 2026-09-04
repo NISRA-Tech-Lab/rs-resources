@@ -366,7 +366,7 @@ caption {
 }
 
 /* Individual segments of the three-colour decorative bar */
-.three-bar-segment {
+.border {
   width: 33.33%;
   height: 9px;
   margin-bottom: 25px;
